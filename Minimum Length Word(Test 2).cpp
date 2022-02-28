@@ -23,10 +23,6 @@ Sample Output 2 :
 a
 
 Solution-
-/* input - Input String
-*  output - Save the result in the output array (passed as argument). You don’t have to 
-*  print or return the result
-*/
 #include <cstring>
 void minLengthWord(char input[], char output[]){
     int len = strlen(input);
@@ -52,4 +48,17 @@ void minLengthWord(char input[], char output[]){
  {
    output[i]=input[min_start_index++];
  }
+}
+
+Main Code(already given)-
+	
+#include<iostream>
+#include "solution.h"
+using namespace std;
+
+int main(){
+  char ch[10000], output[10000];
+  cin.getline(ch, 10000);
+  minLengthWord(ch, output);
+  cout << output << endl;
 }
